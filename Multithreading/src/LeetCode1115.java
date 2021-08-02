@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class LeetCode1115 {
+public class LeetCode1115 {
 }

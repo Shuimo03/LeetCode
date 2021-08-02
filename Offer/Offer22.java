@@ -1,0 +1,2 @@
+public class Offer22 {
+}

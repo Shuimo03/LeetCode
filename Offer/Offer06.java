@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class Offer06 {
 
@@ -10,15 +11,21 @@ public class Offer06 {
     }
 
     public int[] reversePrint(ListNode head) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        while (linkedList != null){
-            linkedList.addLast(head.val);
-            head = head.next;
+
+
+        // 使用栈实现
+        Stack<ListNode> stack = new Stack<>();
+        ListNode temp = head;
+        while (temp != null){
+            stack.push(temp);
+            temp = temp.next;
         }
-        int[]res = new int[linkedList.size()];
-        for(int i = 0 ; i < res.length;i++){
-            res[i] = linkedList.removeLast();
+        int size = stack.size();
+        int[]print = new int[size];
+
+        for(int i = 0; i < size; i++){
+            print[i] = stack.pop().val;
         }
-        return res;
+        return print;
     }
 }
