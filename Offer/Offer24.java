@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class Offer24 {
 
     class ListNode{
@@ -6,19 +8,36 @@ public class Offer24 {
         ListNode(int x){val = x;}
     }
 
-    public ListNode reverseList(ListNode head) {
-        if (head == null){
-            return head;
+//    public ListNode reverseList(ListNode head) {
+//        if (head == null){
+//            return head;
+//        }
+//        ListNode dum = head,pre = null;
+//        while (dum != null){
+//            ListNode temp = dum.next;
+//            dum.next = pre;
+//            pre = dum;
+//            dum = temp;
+//        }
+//        return pre;
+//    }
+
+    public ListNode reverseList(ListNode head){
+        ListNode dum = head;
+        Stack<ListNode> stack = new Stack<>();
+        while (dum != null){
+            stack.push(dum);
+            dum = dum.next;
         }
 
-        ListNode prev = null;
-        ListNode curr = head;
-        while (curr != null){
-            ListNode next  = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        ListNode newHead = stack.pop();
+        dum = newHead;
+
+        while (!stack.isEmpty()){
+            dum.next = stack.pop();
+            dum = dum.next;
         }
-        return prev;
+        dum.next = null;
+        return newHead;
     }
 }

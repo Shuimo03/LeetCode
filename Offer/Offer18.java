@@ -7,6 +7,6 @@ public class Offer18 {
     }
 
     public ListNode deleteNode(ListNode head, int val) {
-
+        return null;
     }
 }

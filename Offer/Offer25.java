@@ -6,10 +6,8 @@ public class Offer25 {
         ListNode (int x){val = x;}
     }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode dum = new ListNode(0); // 设置伪头节点
-        ListNode cur = dum;
+        ListNode dum = new ListNode(0), cur = dum;
         while (l1 != null && l2 != null){
-
             if (l1.val < l2.val){
                 cur.next = l1;
                 l1 = l1.next;
