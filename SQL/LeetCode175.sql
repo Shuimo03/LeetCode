@@ -5,3 +5,6 @@ insert into Person (PersonId, LastName, FirstName) values ('1', 'Wang', 'Allen')
 Truncate table Address
 insert into Address (AddressId, PersonId, City, State) values ('1', '2', 'New York City', 'New York')
 
+
+SELECT FirstName,LastName,City,Sate FROM Peron LEFT JOIN Address
+on Person.PersonId = Address.PersonId
