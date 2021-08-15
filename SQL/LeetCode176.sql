@@ -6,9 +6,15 @@ insert into Employee (Id, Salary) values ('3', '300')
 
 
 SELECT
-    IFNULL(
-    (
-        SELECT DISTINCT Salary FROM Employee
-        ORDER BY Salary DESC
-        LIMIT 1 OFFSET 1), NULL
-    ) AS SecondHighestSalary
+	Department.NAME AS Department,
+	Employee.NAME AS Employee,
+	Salary 
+FROM
+	Employee,
+	Department 
+WHERE
+	Employee.DepartmentId = Department.Id 
+	AND ( Employee.DepartmentId, Salary ) 
+    IN (SELECT DepartmentId, max( Salary ) 
+        FROM Employee 
+        GROUP BY DepartmentId )

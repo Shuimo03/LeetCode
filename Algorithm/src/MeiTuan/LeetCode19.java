@@ -1,2 +1,5 @@
-package MeiTuan;public class LeetCode19 {
+package MeiTuan;
+
+public class LeetCode19 {
+
 }
