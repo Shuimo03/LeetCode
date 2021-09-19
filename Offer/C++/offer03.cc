@@ -1,19 +1,37 @@
-#include<iostream>
-#include<algorithm>
+#include<iosteam>
 #include<vector>
+#include<unordered_map>
+#include<algorithm>
 using namespace std;
 
 class Solution {
 public:
+    int findRepeatNumber(vector<int>& nums) {
+        // if(nums.size() == 0){
+        //     return 0;
+        // }
+        // sort(nums.begin(),nums.end());
 
-    vector<int> countBits(int n) {
-        vector<int>ans(n+1,0);
-        if(n > 1){
-            ans[1] = 1;
+        // int l = 0;
+        // int r = 1;
+        
+        // for(int i = 0; i < nums.size(); i++){
+        //     if(nums[i] == nums[r]){
+        //         return nums[i];
+        //     }
+        //     l++;
+        //     r++;
+        // }
+        // return 0;
+
+    unordered_map<int,bool> map;
+    for(int num : nums){
+            if(map[num]){
+                return num;
+            }
+            map[num] = true;
         }
-        for(int i = 0; i <= n ; i++){
-            ans[i] = i % 2 + ans[i/2];
-        }
-        return ans;
+
+        return -1;
     }
 };
