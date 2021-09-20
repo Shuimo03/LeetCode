@@ -1,11 +1,19 @@
 #include<iostream>
 #include<vector>
-#include<math.h>
+#include<unordered_map>
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    int n;
-    cin >> n;
-   cout << pow(10,n) << endl;
-    return 0;
+   vector<int>nums = {9,1,7,9,7,9,7};
+    unordered_map<int, int> counts;
+        int majority = 0, cnt = 1;
+        for (int num: nums) {
+            ++counts[num];
+            if (counts[num] == cnt) {
+                majority = num;
+                cnt = counts[num];
+            }
+        }
+        cout << majority << endl;
 }
+
