@@ -4,32 +4,29 @@ using namespace std;
 
 
 class MinStack {
+    stack<int> s1;
+    stack<int> s2;
 public:
     /** initialize your data structure here. */
     MinStack() {
+        s2.push(INT_MAX);
+    }
 
-    }
-    stack<int>s1;
-    stack<int>s2;
-    void push(int x) {
+    void push(int x){
         s1.push(x);
-        if(s1.empty() || x <= s1.top()){
-            s2.push(x);
-        }
+        s2.push(min(s2.top(),x));
     }
-    
-    void pop() {
-        if(s1.top() == s2.top()){
-            s2.pop();
-        }
+
+    void pop(){
         s1.pop();
+        s2.pop();
     }
-    
-    int top() {
+
+    int top(){
         return s1.top();
     }
-    
-    int min() {
+
+    int min(){
         return s2.top();
     }
 };
