@@ -13,7 +13,11 @@ struct TreeNode{
 class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
-        return isSymmetric(root,root);
+       // return isSymmetric(root,root);
+       if(!root){
+            return true;
+       }
+       return dfs(root->left,root->right);
     }
 
     bool isSymmetric(TreeNode* root1, TreeNode* root2){
@@ -29,5 +33,15 @@ public:
         }
 
         return isSymmetric(root1->left,root2->right) && (root1->right,root2->left);
+    }
+
+    bool dfs(TreeNode* p, TreeNode* q){
+        if(!q || !p){
+            return !p && !q;
+        }
+        if(p->val != q->val){
+            return false;
+        }
+        return dfs(p->left,q->right) && dfs(p->right,q->left);
     }
 };

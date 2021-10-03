@@ -1,15 +1,15 @@
 #include<iostream>
 #include<vector>
-#include <bits/stdc++.h>
 using namespace std;
 
-class Solution{
-    int maxProfit(vector<int>prices){
-        int cost = INT_MAX, profit = 0;
-        for(int price: prices){
-            cost  = min(cost,price);
-            profit = max(profit,price-cost);
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int maxCur = 0, maxSofar = 0;
+        for(int i = 1; i < prices.size(); i++){
+            maxCur = max(0,maxCur += prices[i] - prices[i-1]);
+            maxSofar = max(maxCur,maxSofar);
         }
-        return profit;
+        return maxSofar;
     }
-}
+};
