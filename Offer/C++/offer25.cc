@@ -28,20 +28,21 @@ public:
 
     // 双指针写法
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2){
-        ListNode* res = new ListNode(0);
-        ListNode* temp = res;
-        while(l1 != nullptr && l2 != nullptr){
+        ListNode dummy(INT_MIN);
+        ListNode *curr = &dummy;
+
+        while(l1 !=nullptr && l2 != nullptr){
             if(l1->val < l2->val){
-                temp->next = l1;
+                curr->next = l1;
                 l1 = l1->next;
             }
             else{
-                temp->next = l2;
+                curr->next = l2;
                 l2 = l2->next;
             }
-            temp = temp->next;
+            curr = curr->next;
         }
-        temp->next = l1 != nullptr ? l1:l2;
-        return res->next;
+        curr->next = l1 ? l1 : l2;
+        return dummy.next;
     }
 };

@@ -7,14 +7,13 @@ class Solution {
 public:
     // 哈希表统计出现的次数
     int majorityElement(vector<int>& nums) {
-        unordered_map<int,int> counts;
-        int majority = 0;
-        int cnt = 0;
-        for(int num:nums){
-            ++counts[num];
-            if(counts[num] > cnt){
+        unordered_map<int,int> cntMap;
+        int majority = 0, cnt = 0;
+        for(auto num:nums){
+            cntMap[num]++;
+            if(cntMap[num] > cnt){
                 majority = num;
-                cnt = counts[nums];
+                cnt = cntMap[num];
             }
         }
         return majority;

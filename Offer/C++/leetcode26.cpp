@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+#include<set>
 using namespace std;
 
 class Solution {
@@ -19,5 +21,14 @@ public:
             l++;
         }
         return r;
+    }
+
+    int removeDuplicates(vector<int>& nums){
+        if(nums.size() == 0){
+            return 0;
+        }
+        set<int>res(nums.begin(),nums.end());
+        nums.assign(res.begin(),res.end());
+        return nums.size();
     }
 };
