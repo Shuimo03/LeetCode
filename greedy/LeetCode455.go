@@ -5,12 +5,12 @@ import "sort"
 func findContentChildren(g []int, s []int) int {
 	sort.Ints(g)
 	sort.Ints(s)
-	children, cookies := 0, 0
-	for children < len(g) && cookies < len(s) {
-		if s[children] <= g[cookies] {
-			children++
+	child, cookie := 0, 0
+	for child < len(g) && cookie < len(s) {
+		if g[child] <= s[cookie] {
+			child++
 		}
-		cookies++
+		cookie++
 	}
-	return children
+	return child
 }

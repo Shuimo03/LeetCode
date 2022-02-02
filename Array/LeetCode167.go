@@ -1,17 +1,17 @@
 package array
 
 func twoSum(numbers []int, target int) []int {
+	if len(numbers) == 0 {
+		return nil
+	}
 
 	l, r := 0, len(numbers)-1
-
-	for l < r {
-
-		sum := numbers[l] + numbers[r]
-		if sum == target {
+	for i := 0; i < len(numbers); i++ {
+		if numbers[l]+numbers[r] == target {
 			break
-		} else if sum < target {
+		} else if numbers[l]+numbers[r] < target {
 			l++
-		} else if sum > target {
+		} else {
 			r--
 		}
 	}

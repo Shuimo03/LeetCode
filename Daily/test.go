@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+type Test struct {
+	x int
+	y int
+}
+
+type mapTest struct {
+	address map[string][]Test
+}
 
 func main() {
-	fmt.Println("test")
+
 }
