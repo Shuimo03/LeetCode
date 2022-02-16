@@ -1,6 +1,11 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
     }
 }
