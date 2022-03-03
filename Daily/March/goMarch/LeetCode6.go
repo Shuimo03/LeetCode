@@ -1,4 +1,4 @@
-package march
+package goMarch
 
 import "bytes"
 
