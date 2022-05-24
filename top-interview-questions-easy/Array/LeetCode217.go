@@ -1,4 +1,4 @@
-package top_interview_questions_easy
+package Array
 
 import "sort"
 
