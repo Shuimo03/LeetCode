@@ -16,6 +16,8 @@ func isAnagram(s string, t string) bool {
 		orderS[i] = string(s[i])
 	}
 
+	sort.Float64s()
+
 	for i := 0; i < len(t); i++ {
 		orderT[i] = string(t[i])
 	}
