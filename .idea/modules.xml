@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/LeetCodeJava.iml" filepath="$PROJECT_DIR$/.idea/LeetCodeJava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Algorithm/Offer.iml" filepath="$PROJECT_DIR$/Algorithm/Offer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/acwing/acwing.iml" filepath="$PROJECT_DIR$/acwing/acwing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/.idea/LeetCode.iml" />
     </modules>
   </component>
 </project>
