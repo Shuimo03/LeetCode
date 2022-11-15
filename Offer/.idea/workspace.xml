@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00a63d67-85b7-4669-aba2-3db08cd14c5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/golang/Offer206.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang/Array/Offer03.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang/Array/Offer39.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang/Array/Offer40.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang/Array/Offer57.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang/Array/Offer61.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/Offer03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/Offer39.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/Offer40.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Array/Offer57.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/golang/offer95.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,7 @@
     &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/sourceCode/LeetCode/offer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/sourceCode/devstream&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -67,6 +72,19 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="offer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Offer39" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.Offer39" />
+      <module name="offer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +120,7 @@
       <workItem from="1668392328282" duration="6076000" />
       <workItem from="1668405742388" duration="94000" />
       <workItem from="1668405848472" duration="4939000" />
+      <workItem from="1668477388181" duration="5898000" />
     </task>
     <servers />
   </component>
