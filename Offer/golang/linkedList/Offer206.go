@@ -1,4 +1,4 @@
-package Golang
+package linkedList
 
 type ListNode struct {
 	Val  int
