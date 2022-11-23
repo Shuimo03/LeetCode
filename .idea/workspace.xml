@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9935a732-ba52-486d-991e-f9f385c8ee60" name="Changes" comment="" />
+    <list default="true" id="9935a732-ba52-486d-991e-f9f385c8ee60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/LeetCode167.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/LeetCode27.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/LeetCode283.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/LeetCode344.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/Offer26.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/Offer53.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/Array/array.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/linkedList/LeetCode141.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/linkedList/LeetCode19.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/linkedList/LeetCode83.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/linkedList/LeetCode876.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Offer/golang/linkedList/Offer27.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Offer/golang/linkedList/linkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/Offer/golang/linkedList/linkedList.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +60,10 @@
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "D:/sourceCode/LeetCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -60,6 +80,14 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build LeetCode151.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/String/LeetCode151.go" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="LeetCode" />
       <working_directory value="$PROJECT_DIR$" />
@@ -68,14 +96,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build LeetCode151.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/String/LeetCode151.go" />
       <method v="2" />
     </configuration>
   </component>
