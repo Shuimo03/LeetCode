@@ -1,4 +1,4 @@
-package Array
+package array
 
 func removeElement(nums []int, val int) int {
 	slow, fast := 0, 0

@@ -1,4 +1,4 @@
-package Array
+package array
 
 func majorityElement(nums []int) int {
 	votes, x := 0, 0

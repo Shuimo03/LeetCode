@@ -1,4 +1,4 @@
-package Array
+package array
 
 func findRepeatNumber(nums []int) int {
 	i := 0

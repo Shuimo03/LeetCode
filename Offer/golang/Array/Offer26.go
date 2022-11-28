@@ -1,4 +1,4 @@
-package Array
+package array
 
 func removeDuplicates(nums []int) int {
 	slow, fast := 0, 0

@@ -1,4 +1,4 @@
-package Array
+package array
 
 func twoSumLeetCode(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1

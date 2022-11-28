@@ -1,4 +1,4 @@
-package Array
+package array
 
 func reverseString(s []byte) {
 	left, right := 0, len(s)
